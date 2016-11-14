@@ -7,6 +7,8 @@ from collections import namedtuple
 import requests
 import bs4
 
+__author__ = 'Artem Krivonos'
+__version__ = '1.0.0'
 
 SearchResult = namedtuple('SearchResult', 'title link')
 
