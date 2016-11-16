@@ -14,6 +14,10 @@ SearchResult = namedtuple('SearchResult', 'title link')
 
 
 def search(subject):
+    """
+    >>> search('python') # doctest: +ELLIPSIS
+    [SearchResult(...)...]
+    """
     request = requests.get("https://yandex.ru/search/?text=" + subject)
     request.raise_for_status()
 
